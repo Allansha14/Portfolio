@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Allansha M A Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Allansha M A</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="Allansha%20MA.pdf" target="_blank" class="resume-link">Resume</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <h1>Get In Touch</h1>
+        <p>Let's collaborate and create data-driven solutions</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Me a Message</h2>
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/allanebiebi21@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectType">Type of Project</label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="">Select Project Type</option>
+                                <option value="analysis">Data Analysis</option>
+                                <option value="visualization">Data Visualization</option>
+                                <option value="dashboard">Dashboard Development</option>
+                                <option value="consulting">Data Consulting</option>
+                                <option value="training">Training & Workshops</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- removed external _next redirect to avoid Sucuri firewall GEO blocks; FormSubmit will show a success page instead -->
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+
+                    <!-- Success Modal (hidden by default) -->
+                    <div id="formModal" class="modal" aria-hidden="true">
+                        <div class="modal-content">
+                            <h3 id="modalTitle">Message Sent</h3>
+                            <p id="modalBody">Thank you — your message was sent successfully.</p>
+                            <div class="modal-actions">
+                                <a href="index.html" id="modalHome" class="btn btn-primary">Go to Home</a>
+                                <button id="modalStay" class="btn btn-secondary">Stay on Contact</button>
+                            </div>
+                            <button class="modal-close" id="modalClose">×</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p><a href="mailto:allanebiebi21@gmail.com">allanebiebi21@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+918428210672">+91 84282 10672</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>Kanniyakumari, India 629804</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-content">
+                            <h3>Response Time</h3>
+                            <p>I typically respond within 24-48 hours</p>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 20px;">Connect With Me</h3>
+                    <div class="social-connect">
+                        <a href="https://www.linkedin.com/in/allansha" target="_blank" class="social-btn">
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Allansha14" target="_blank" class="social-btn">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.instagram.com/allansha2/" target="_blank" class="social-btn">
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://github.com/Allansha14?tab=repositories" target="_blank" class="social-btn">
+                            <span>Portfolio Projects</span>
+                        </a>
+                    </div>
+
+                    <!-- Availability Calendar -->
+                    <div class="availability">
+                        <h3>Availability</h3>
+                        <p>🟢 Available for freelance & full-time opportunities</p>
+                        <p>Remote & onsite work available</p>
+                        <p>Quick turnaround on projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume-section">
+        <div class="container">
+            <h2>My Resume</h2>
+            <div class="resume-container">
+                <div class="resume-info">
+                    <p>Download my comprehensive resume to learn more about my experience, skills, and projects.</p>
+                </div>
+                <div class="resume-buttons">
+                    <a href="Allansha MA.pdf" download="Allansha_MA_Resume.pdf" class="btn btn-primary">
+                        📥 Download Resume
+                    </a>
+                    <a href="Allansha MA.pdf" target="_blank" class="btn btn-secondary">
+                        👁️ View Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What services do you provide?</h3>
+                    <p>I offer machine learning solutions, data analysis, data visualization, SQL optimization, Python development, and web scraping services tailored to your specific needs.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What is your typical project turnaround?</h3>
+                    <p>Project timelines depend on scope and complexity. Small analyses may take 3-5 days, while complex ML projects could take 2-4 weeks. We'll discuss timelines during our initial consultation.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you work with remote clients?</h3>
+                    <p>Yes! I work with clients anywhere in India and globally. All communication is conducted remotely via email, video calls, and collaboration tools.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What data formats do you work with?</h3>
+                    <p>I work with various formats including CSV, Excel, JSON, XML, SQL databases, and APIs. If you have data in another format, let's discuss it.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can you provide references or portfolio samples?</h3>
+                    <p>Yes, you can check my GitHub profile at https://github.com/Allansha14 for project samples and code. Additional references available upon request.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What are your rates?</h3>
+                    <p>I offer competitive rates that scale based on project complexity and duration. Let's discuss your specific requirements for a customized quote.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Allansha M A. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/allansha" target="_blank" title="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/Allansha14" target="_blank" title="GitHub">GitHub</a>
+                <a href="https://www.instagram.com/allansha2/" target="_blank" title="Instagram">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
